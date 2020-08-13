@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxx.mybatis.dao.CourseMapper">
+  <resultMap id="BaseResultMap" type="com.xxx.mybatis.entity.Course">
+    <constructor>
+      <arg column="Cid" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="Cname" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="Tid" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <insert id="insert" parameterType="com.xxx.mybatis.entity.Course">
+    insert into test_course (Cid, Cname, Tid
+      )
+    values (#{cid,jdbcType=VARCHAR}, #{cname,jdbcType=VARCHAR}, #{tid,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.xxx.mybatis.entity.Course">
+    insert into test_course
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="cid != null">
+        Cid,
+      </if>
+      <if test="cname != null">
+        Cname,
+      </if>
+      <if test="tid != null">
+        Tid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="cid != null">
+        #{cid,jdbcType=VARCHAR},
+      </if>
+      <if test="cname != null">
+        #{cname,jdbcType=VARCHAR},
+      </if>
+      <if test="tid != null">
+        #{tid,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <resultMap id="BaseResultMap" type="com.xxx.mybatis.entity.Course">
+    <constructor>
+      <arg column="Cid" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="Cname" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="Tid" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <insert id="insert" parameterType="com.xxx.mybatis.entity.Course">
+    insert into test_course (Cid, Cname, Tid
+      )
+    values (#{cid,jdbcType=VARCHAR}, #{cname,jdbcType=VARCHAR}, #{tid,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.xxx.mybatis.entity.Course">
+    insert into test_course
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="cid != null">
+        Cid,
+      </if>
+      <if test="cname != null">
+        Cname,
+      </if>
+      <if test="tid != null">
+        Tid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="cid != null">
+        #{cid,jdbcType=VARCHAR},
+      </if>
+      <if test="cname != null">
+        #{cname,jdbcType=VARCHAR},
+      </if>
+      <if test="tid != null">
+        #{tid,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <resultMap id="BaseResultMap" type="com.wglvzyx.mybatisredis.entity.Course">
+    <constructor>
+      <arg column="Cid" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="Cname" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="Tid" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <insert id="insert" parameterType="com.wglvzyx.mybatisredis.entity.Course">
+    insert into test_course (Cid, Cname, Tid
+      )
+    values (#{cid,jdbcType=VARCHAR}, #{cname,jdbcType=VARCHAR}, #{tid,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.wglvzyx.mybatisredis.entity.Course">
+    insert into test_course
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="cid != null">
+        Cid,
+      </if>
+      <if test="cname != null">
+        Cname,
+      </if>
+      <if test="tid != null">
+        Tid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="cid != null">
+        #{cid,jdbcType=VARCHAR},
+      </if>
+      <if test="cname != null">
+        #{cname,jdbcType=VARCHAR},
+      </if>
+      <if test="tid != null">
+        #{tid,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <resultMap id="BaseResultMap" type="com.wglvzyx.mybatisredis.entity.Course">
+    <constructor>
+      <arg column="Cid" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="Cname" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="Tid" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <insert id="insert" parameterType="com.wglvzyx.mybatisredis.entity.Course">
+    insert into test_course (Cid, Cname, Tid
+      )
+    values (#{cid,jdbcType=VARCHAR}, #{cname,jdbcType=VARCHAR}, #{tid,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.wglvzyx.mybatisredis.entity.Course">
+    insert into test_course
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="cid != null">
+        Cid,
+      </if>
+      <if test="cname != null">
+        Cname,
+      </if>
+      <if test="tid != null">
+        Tid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="cid != null">
+        #{cid,jdbcType=VARCHAR},
+      </if>
+      <if test="cname != null">
+        #{cname,jdbcType=VARCHAR},
+      </if>
+      <if test="tid != null">
+        #{tid,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+</mapper>

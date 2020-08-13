@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxx.mybatis.dao.StudentMapper">
+  <resultMap id="BaseResultMap" type="com.xxx.mybatis.entity.Student">
+    <constructor>
+      <arg column="Sid" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="Sname" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="Sage" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="Ssex" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <insert id="insert" parameterType="com.xxx.mybatis.entity.Student">
+    insert into test_student (Sid, Sname, Sage, 
+      Ssex)
+    values (#{sid,jdbcType=VARCHAR}, #{sname,jdbcType=VARCHAR}, #{sage,jdbcType=TIMESTAMP}, 
+      #{ssex,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.xxx.mybatis.entity.Student">
+    insert into test_student
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="sid != null">
+        Sid,
+      </if>
+      <if test="sname != null">
+        Sname,
+      </if>
+      <if test="sage != null">
+        Sage,
+      </if>
+      <if test="ssex != null">
+        Ssex,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="sid != null">
+        #{sid,jdbcType=VARCHAR},
+      </if>
+      <if test="sname != null">
+        #{sname,jdbcType=VARCHAR},
+      </if>
+      <if test="sage != null">
+        #{sage,jdbcType=TIMESTAMP},
+      </if>
+      <if test="ssex != null">
+        #{ssex,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <resultMap id="BaseResultMap" type="com.xxx.mybatis.entity.Student">
+    <constructor>
+      <arg column="Sid" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="Sname" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="Sage" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="Ssex" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <insert id="insert" parameterType="com.xxx.mybatis.entity.Student">
+    insert into test_student (Sid, Sname, Sage, 
+      Ssex)
+    values (#{sid,jdbcType=VARCHAR}, #{sname,jdbcType=VARCHAR}, #{sage,jdbcType=TIMESTAMP}, 
+      #{ssex,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.xxx.mybatis.entity.Student">
+    insert into test_student
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="sid != null">
+        Sid,
+      </if>
+      <if test="sname != null">
+        Sname,
+      </if>
+      <if test="sage != null">
+        Sage,
+      </if>
+      <if test="ssex != null">
+        Ssex,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="sid != null">
+        #{sid,jdbcType=VARCHAR},
+      </if>
+      <if test="sname != null">
+        #{sname,jdbcType=VARCHAR},
+      </if>
+      <if test="sage != null">
+        #{sage,jdbcType=TIMESTAMP},
+      </if>
+      <if test="ssex != null">
+        #{ssex,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <resultMap id="BaseResultMap" type="com.wglvzyx.mybatisredis.entity.Student">
+    <constructor>
+      <arg column="Sid" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="Sname" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="Sage" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="Ssex" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <insert id="insert" parameterType="com.wglvzyx.mybatisredis.entity.Student">
+    insert into test_student (Sid, Sname, Sage, 
+      Ssex)
+    values (#{sid,jdbcType=VARCHAR}, #{sname,jdbcType=VARCHAR}, #{sage,jdbcType=TIMESTAMP}, 
+      #{ssex,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.wglvzyx.mybatisredis.entity.Student">
+    insert into test_student
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="sid != null">
+        Sid,
+      </if>
+      <if test="sname != null">
+        Sname,
+      </if>
+      <if test="sage != null">
+        Sage,
+      </if>
+      <if test="ssex != null">
+        Ssex,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="sid != null">
+        #{sid,jdbcType=VARCHAR},
+      </if>
+      <if test="sname != null">
+        #{sname,jdbcType=VARCHAR},
+      </if>
+      <if test="sage != null">
+        #{sage,jdbcType=TIMESTAMP},
+      </if>
+      <if test="ssex != null">
+        #{ssex,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <resultMap id="BaseResultMap" type="com.wglvzyx.mybatisredis.entity.Student">
+    <constructor>
+      <arg column="Sid" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="Sname" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="Sage" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="Ssex" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <insert id="insert" parameterType="com.wglvzyx.mybatisredis.entity.Student">
+    insert into test_student (Sid, Sname, Sage, 
+      Ssex)
+    values (#{sid,jdbcType=VARCHAR}, #{sname,jdbcType=VARCHAR}, #{sage,jdbcType=TIMESTAMP}, 
+      #{ssex,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.wglvzyx.mybatisredis.entity.Student">
+    insert into test_student
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="sid != null">
+        Sid,
+      </if>
+      <if test="sname != null">
+        Sname,
+      </if>
+      <if test="sage != null">
+        Sage,
+      </if>
+      <if test="ssex != null">
+        Ssex,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="sid != null">
+        #{sid,jdbcType=VARCHAR},
+      </if>
+      <if test="sname != null">
+        #{sname,jdbcType=VARCHAR},
+      </if>
+      <if test="sage != null">
+        #{sage,jdbcType=TIMESTAMP},
+      </if>
+      <if test="ssex != null">
+        #{ssex,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+</mapper>
